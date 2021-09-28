@@ -1,0 +1,14 @@
+{
+  "name": "org.vegetablejuice-am1x",
+  "version": "1.0.0",
+  "description": "Juicing is an art",
+  "main": "app.js",
+  "scripts": {
+    "test": "testing123"
+  },
+  "keywords": [
+    "juicing"
+  ],
+  "author": "Arjan de Ruijter",
+  "license": "ISC"
+}

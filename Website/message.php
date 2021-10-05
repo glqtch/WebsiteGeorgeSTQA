@@ -117,6 +117,12 @@
             </div>';
             header("Refresh: 3; ./index.php?content=home");
     break;
+    case "numberreceived" :
+      echo '<div class="alert alert-success mt-5 w-50 mx-auto text-center" role="alert">
+              Wij hebben uw verzoek ontvangen, een werknemer neemt Z.S.M. contact met u op....
+            </div>';
+            header("Refresh: 3; ./index.php?content=home");
+    break;
     default:
       header("Location: ./index.php?content=home");
     break;

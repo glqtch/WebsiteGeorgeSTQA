@@ -51,13 +51,13 @@ $active = (isset($_GET["content"])) ? $_GET["content"] : "";
         <a class="nav-link" href="./index.php?content=smoothies">Drinken</a>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle <?php echo (in_array($active, ["sleep", "nutrition", "exercise"])) ? "active" : "" ?>" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle <?php echo (in_array($active, ["contact", "reserveren", "evenementen"])) ? "active" : "" ?>" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Over Ons
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item <?php echo ($active == "sleep") ? "active" : "" ?>" href="./index.php?content=sleep">Contact</a>
-          <a class="dropdown-item <?php echo ($active == "nutrition") ? "active" : "" ?>" href="./index.php?content=nutrition">Reserveren</a>
-          <a class="dropdown-item <?php echo ($active == "exercise") ? "active" : "" ?>" href="./index.php?content=exercise">X</a>
+          <a class="dropdown-item <?php echo ($active == "contact") ? "active" : "" ?>" href="./index.php?content=contact">Contact</a>
+          <a class="dropdown-item <?php echo ($active == "reserveren") ? "active" : "" ?>" href="./index.php?content=reserveren">Reserveren</a>
+          <a class="dropdown-item <?php echo ($active == "evenementen") ? "active" : "" ?>" href="./index.php?content=evenementen">Evenementen</a>
         </div>
       </li>
     </ul>

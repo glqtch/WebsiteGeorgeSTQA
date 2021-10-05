@@ -1,6 +1,4 @@
 
-  
-
     <h3 class="text-center">Heeft u vragen over ons restaurant of over onze corona maatregelen?? <br> Hieronder zijn onze contactgegevens.</h3> <hr><br><br>
 
 
@@ -59,4 +57,3 @@
 
     
 
-    

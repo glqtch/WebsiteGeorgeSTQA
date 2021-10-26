@@ -44,19 +44,19 @@ $active = (isset($_GET["content"])) ? $_GET["content"] : "";
                 </li>';
         }
       ?> 
-      <li class="nav-item <?php echo ($active == "juices") ? "active" : "" ?>">
-        <a class="nav-link" href="./index.php?content=juices">Eten</a>
+      <li class="nav-item <?php echo ($active == "contact") ? "active" : "" ?>">
+        <a class="nav-link" href="./index.php?content=contact">Contact</a>
       </li>
-      <li class="nav-item <?php echo ($active == "smoothies") ? "active" : "" ?>">
-        <a class="nav-link" href="./index.php?content=smoothies">Drinken</a>
+      <li class="nav-item <?php echo ($active == "reserveren") ? "active" : "" ?>">
+        <a class="nav-link" href="./index.php?content=reserveren">Reserveren</a>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle <?php echo (in_array($active, ["contact", "reserveren", "evenementen"])) ? "active" : "" ?>" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Over Ons
+        <a class="nav-link dropdown-toggle <?php echo (in_array($active, ["gallery", "reserveren", "evenementen"])) ? "active" : "" ?>" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Meer
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item <?php echo ($active == "contact") ? "active" : "" ?>" href="./index.php?content=contact">Contact</a>
-          <a class="dropdown-item <?php echo ($active == "reserveren") ? "active" : "" ?>" href="./index.php?content=reserveren">Reserveren</a>
+          <a class="dropdown-item <?php echo ($active == "aboutus") ? "active" : "" ?>" href="./index.php?content=aboutus">Over Ons</a>
+          <a class="dropdown-item <?php echo ($active == "gallery") ? "active" : "" ?>" href="./index.php?content=gallery">Gallerij</a>
           <a class="dropdown-item <?php echo ($active == "evenementen") ? "active" : "" ?>" href="./index.php?content=evenementen">Evenementen</a>
         </div>
       </li>

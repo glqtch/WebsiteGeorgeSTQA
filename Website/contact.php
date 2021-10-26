@@ -2,7 +2,7 @@
   
   
 
-    <h3 class="text-center">Heeft u vragen over ons restaurant of over onze corona maatregelen?? <br> Hieronder zijn onze contactgegevens.</h3> <hr class="my-4 line"style="width:100%", color=black><br><br>
+    <h3 class="text-center">Heeft u vragen over ons restaurant of over onze corona maatregelen?? <br> Klik dan <a href="./index.php?content=covid">hier</a>.</h3> <hr class="my-4 line"style="width:100%", color=black><br><br>
 
 
 

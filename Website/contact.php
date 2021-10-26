@@ -1,7 +1,12 @@
+<<<<<<< HEAD
   
   
 
     <h3 class="text-center">Heeft u vragen over ons restaurant of over onze corona maatregelen?? <br> Hieronder zijn onze contactgegevens.</h3> <hr class="my-4 line"style="width:100%", color=black><br><br>
+=======
+
+    <h3 class="text-center">Heeft u vragen over ons restaurant of over onze corona maatregelen?? <br> Hieronder zijn onze contactgegevens.</h3> <hr><br><br>
+>>>>>>> 376317d816841eeb7c2f5ce86e7191db2a5516f3
 
 
     <div class="row">
@@ -70,4 +75,3 @@
 
     
 
-    

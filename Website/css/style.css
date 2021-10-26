@@ -1,5 +1,5 @@
 #footer {
-  min-height: 3em;
+  min-height: 2em;
   background-color: white;
   color: black;
   text-align: center;
@@ -10,3 +10,4 @@
   border-bottom: 1px solid black;
   display: block;
 }
+

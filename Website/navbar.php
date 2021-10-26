@@ -1,4 +1,7 @@
 <?php
+
+session_start(); session_gc();
+
 $active = (isset($_GET["content"])) ? $_GET["content"] : "";
 ?>
 <nav class="navbar navbar-expand-md navbar-light bg-light">

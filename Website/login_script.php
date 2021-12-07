@@ -11,7 +11,7 @@ if (empty($email) || empty($password)) {
   header("Location: ./index.php?content=message&alert=loginform-empty");
 } else {
 
-  $sql = "SELECT * FROM `register` WHERE `email` = '$email'";
+  $sql = "SELECT * FROM `password` WHERE `email` = '$email'";
 
   $result = mysqli_query($conn, $sql);
 
@@ -29,27 +29,33 @@ if (empty($email) || empty($password)) {
     if (!$record["activated"]) {
       // Not activated
       header("Location: ./index.php?content=message&alert=not-activated&email=$email");
-    } elseif (!password_verify($password, $record["password"])) {
+    } elseif (!password_verify($password, $record["passwd"])) {
       // No password match
       header("Location: ./index.php?content=message&alert=no-pw-match&email=$email");
     } else {
       // password matched
-     
-      $_SESSION["id"] = $record["id"];
-      $_SESSION["userrole"] = $record["userrole"];
-
-      switch ($record["userrole"]) {
-        case 'customer':
-          header("Location: ./index.php?content=c-home");
+      $_SESSION["email"] = $record["email"];
+      $_SESSION["password"] = $record["passwd"];
+      $_SESSION["userrole"] = $record["rol"];
+      // var_dump($record["rol"]);exit();
+      switch ($record["rol"]) {
+        case 'docent':
+          header("Location: ./index.php?content=d-home");
+          break;
+        case 'eigenaar':
+          header("Location: ./index.php?content=e-home");
+          break;
+        case 'student':
+          header("Location: ./index.php?content=s-home");
+          break;
+        case 'begeleider':
+          header("Location: ./index.php?content=b-home");
+          break;
+        case 'klant':
+          header("Location: ./index.php?content=k-home");
           break;
         case 'root':
           header("Location: ./index.php?content=r-home");
-          break;
-        case 'admin':
-          header("Location: ./index.php?content=a-home");
-          break;
-        case 'moderator':
-          header("Location: ./index.php?content=m-home");
           break;
         default:
           header("Location: ./index.php?content=home");

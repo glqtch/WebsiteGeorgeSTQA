@@ -2,4 +2,4 @@
   include("./functions.php");
   is_authorized(["root"]);
 ?>
-r-home
+Root-home
